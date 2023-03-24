@@ -50,4 +50,11 @@ ScrollReveal().reveal('.home-img, .services-container, .porfolio-box, .contact f
 ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left'});
 ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right'});
 
-
+// Multiple text
+const typed = new Typed('.multiple-text', {
+    strings: ['Diseñador', 'Publicista Profesional', 'Community Manager'],
+    typeSpeed: 100,
+    backSpeed: 100,
+    backDelay: 1000,
+    loop: true
+})
