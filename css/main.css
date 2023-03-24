@@ -306,6 +306,7 @@ span{
 .contact form{
     max-width: 70rem;
     margin: 1rem auto;
+    text-align: center;
     margin-bottom: 3rem;
 }
 
@@ -332,4 +333,9 @@ span{
 
 .contact form textarea {
     resize: none;
+}
+
+.contact form .btn {
+    margin-top: 2rem;
+    cursor: pointer;
 }
