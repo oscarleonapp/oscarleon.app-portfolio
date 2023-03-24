@@ -31,4 +31,8 @@ window.onscroll = () =>{
     let header = document.querySelector('header');
 
     header.classList.toggle('sticky', window.scrolloY > 100);
+
+    // Remove toggle and navbar
+    menuIcon.classList.remove('bx-x');
+    navbar.classList.remove('active');
 };
