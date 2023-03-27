@@ -48,9 +48,9 @@ section {
     z-index: 100;
 }
 
-.header img {
-    width: 150px;
-    height: 50px;
+.logo-img {
+    width: 128px;
+    height: 33px;
 }
 
 .header.sticky {
