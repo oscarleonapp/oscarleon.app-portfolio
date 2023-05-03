@@ -57,7 +57,6 @@ const typed = new Typed('.multiple-text', {
     backSpeed: 100,
     backDelay: 1000,
     loop: true
-<<<<<<< HEAD
 })
 
 /*=============== MIXITUP FILTER PORTFOLIO ===============*/
@@ -97,6 +96,3 @@ function portfolioItemDetails(portfolioItem){
     document.querySelector(".portfolio_popup-subtitle span").innerHTML = portfolioItem.querySelector(".work_tittle").innerHTML;
     document.querySelector(".portfolio_popup-body").innerHTML = portfolioItem.querySelector(".portafolio_item-details").innerHTML;
 }
-=======
-})
->>>>>>> e187cb206d060b01ffc0de7e4eb487399bfef2ab
