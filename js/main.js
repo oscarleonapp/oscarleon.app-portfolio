@@ -58,3 +58,41 @@ const typed = new Typed('.multiple-text', {
     backDelay: 1000,
     loop: true
 })
+
+/*=============== MIXITUP FILTER PORTFOLIO ===============*/
+let mixerPortolio = mixitup('.work_container', {
+    selectors: {
+        target: '.work_card'
+    },
+    animation: {
+        duration: 300
+    }
+});
+
+/*===== Work Popup =====*/
+document.addEventListener("click", (e) => {
+    if(e.target.classList.contains("work_img")){
+        togglePortfolioPopup()
+        portfolioItemDetails(e.target.parentElement);
+    }
+})
+
+document.addEventListener("click", (e) => {
+    if(e.target.classList.contains("work_button")){
+        togglePortfolioPopup()
+        portfolioItemDetails(e.target.parentElement);
+    }
+})
+
+function togglePortfolioPopup() {
+    document.querySelector(".portfolio_popup").classList.toggle("open");
+}
+
+document.querySelector(".close-modal").addEventListener("click", togglePortfolioPopup)
+
+function portfolioItemDetails(portfolioItem){
+    document.querySelector(".pp_thumbnail img").src = portfolioItem.querySelector(".work_img").src;
+    // Se puede cambiar el img class, para cargar otro recurso
+    document.querySelector(".portfolio_popup-subtitle span").innerHTML = portfolioItem.querySelector(".work_tittle").innerHTML;
+    document.querySelector(".portfolio_popup-body").innerHTML = portfolioItem.querySelector(".portafolio_item-details").innerHTML;
+}
