@@ -59,6 +59,17 @@ const typed = new Typed('.multiple-text', {
     loop: true
 })
 
+/*===== Link Active Work =====*/
+const linkWork = document.querySelectorAll('.work_item')
+
+function activeWork(){
+    linkWork.forEach(l=> l.classList.remove('active_work'))
+    this.classList.add('active_work')
+}
+
+linkWork.forEach(l=> l.addEventListener("click", activeWork))
+
+
 /*=============== MIXITUP FILTER PORTFOLIO ===============*/
 let mixerPortolio = mixitup('.work_container', {
     selectors: {
