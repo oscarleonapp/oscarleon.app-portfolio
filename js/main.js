@@ -104,6 +104,6 @@ document.querySelector(".close-modal").addEventListener("click", togglePortfolio
 function portfolioItemDetails(portfolioItem){
     document.querySelector(".pp_thumbnail img").src = portfolioItem.querySelector(".work_img").src;
     // Se puede cambiar el img class, para cargar otro recurso
-    document.querySelector(".portfolio_popup-subtitle span").innerHTML = portfolioItem.querySelector(".work_tittle").innerHTML;
+    document.querySelector(".portfolio_popup-subtitle span").innerHTML = portfolioItem.querySelector(".work_title").innerHTML;
     document.querySelector(".portfolio_popup-body").innerHTML = portfolioItem.querySelector(".portafolio_item-details").innerHTML;
 }
